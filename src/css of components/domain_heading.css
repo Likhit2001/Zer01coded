@@ -1,0 +1,23 @@
+.domains{
+    background-color:#906de9;
+    font-family: 'Raleway', sans-serif;
+   
+
+}
+.domains  h1{
+    color: #171D20;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+#domains-underline{
+    width: 6%;
+    height: 10px;
+    margin-left: 47%;
+    margin-top: 10px;
+    background-color: #171D20;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}

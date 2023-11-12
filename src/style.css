@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: #171D20;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent , #906de9);
+    border-radius: 6px;
+}
+#Rotate90{
+    transform: rotate(90deg);
+}
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{ 
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+/*global css for 'headings' class */
+.headings{
+	text-align: center;
+	color: #181d21;
+}
+.headings h1{
+	padding: 5% 0%;
+	padding-top: 23px;
+	padding-bottom: 4px;
+}
+.headings p{
+	margin: 0;
+}
+
+.nav-item .nav-underline{
+	justify-content: center;
+	align-items: center;
+	width: 0%;
+	margin-left: 50%;
+	height: 2px;
+	background: #906DE9;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.5s;
+}
+.nav-item:hover .nav-underline,
+.active .nav-underline{
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin-left: 25%;
+	height: 2px;
+	background: #906DE9;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.5s;
+}
+
+
+
+
+/*about club css*/
+.abtclub{
+	background-color: #906DE9;
+	padding: 0% 25%;
+}
+.abtclub p{
+	padding: 10% 0%;
+}
+/*activities (swiper js) css*/
+/* .activities{
+	color: #906DE9;
+	background-color: #181d21;
+} */
+/*domains (hexagons) css*/
+.domains{
+	background-color: #906DE9;
+
+}
+/*goals css*/
+.goals{
+	color: #906DE9;
+	background-color: #181d21;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #1E262A;
+    padding: 70px 30px 0 30px;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col ul{
+    margin-left: -2rem;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #7B2AFF;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	/*padding-left: 8px;*/
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #181d21;
+	background-color: #ffffff;
+}
+
+ hr{
+     color: #ffffff;
+ }
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+.activities{
+    background-color:#171D20;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+} 
+
+.activities h1{
+    color: #906de9;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 900;
+}
+
+.underline{
+    width: 6%;
+    height: 10px;
+    margin-left: 47%;
+    margin-top: 10px;
+    background-color: #906de9;
+    border-radius: 30px;
+}

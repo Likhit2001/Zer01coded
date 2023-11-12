@@ -1,0 +1,18 @@
+.h1_of_page22  h1{
+    color: #906de9;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Page2-underline2{
+    width: 6%;
+    height: 10px;
+    margin-left: 47%;
+    margin-top: 10px;
+    background-color: #906de9;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}

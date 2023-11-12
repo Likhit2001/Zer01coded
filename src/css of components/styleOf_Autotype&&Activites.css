@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*----------Autotype----------*/
+.auto-type-div{
+    height: 75vh;
+    background-color: #171D20;
+    padding-top: 100px;
+}
+
+#auto-type{
+    position: relative;
+    width: 50%;
+    height: 75%;
+    margin-left: 25%;
+    background-color: #202429;
+    border-radius: 3%;
+}
+
+#auto-type .auto-type-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top: 1%;
+    margin-right: 16px;
+}
+
+#auto-type p{
+    position: absolute;
+    margin-top: 17px;
+    padding-left: 3%;
+    color: #FFFFFF;
+    position:absolute;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16;
+    font-weight: 400;
+}
+
+#auto-type .circle{
+    width: 14px;
+    height: 14px;
+    margin-top: 17px;
+    border-radius: 50%;
+}
+
+
+#auto-type #circle-green{
+    margin-right: 15px;
+    background-color: #4CD263;
+
+}
+
+#auto-type #circle-yellow{
+    margin-right: 15px;
+    background-color: #F5E128;
+}
+
+#auto-type #circle-red{
+    background-color: #FD5C5C;
+}
+
+.auto-type-text1 #lt{
+    color: #2F6FFF;
+    padding-left: 19px;
+    font-family:  'Source Code Pro', monospace ;
+}
+
+.auto-type-text2{
+    margin-left: 15px;
+}
+
+
+/*----x-----Autotype-----x----*/
+
+
+
+
+
+
+
+
+/*----------About the club ----------*/
+
+.about-the-club-top-waves section{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background: #171D20;
+    overflow: hidden;
+}
+
+.about-the-club-top-waves section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* background: url(/resources/wave.png); */
+    background-size: 1000px 100px;
+}
+.about-the-club-top-waves section .wave1{
+    animation: flow1 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.about-the-club-top-waves section .wave2{
+    animation: flow2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay:-5s;
+    bottom: 10px;
+}
+.about-the-club-top-waves section .wave3{
+    animation: flow1 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+.about-the-club-top-waves section .wave4{
+    animation: flow2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes flow1{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes flow2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+.about-the-club{
+    background-color: #906de9;
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-the-club h1{
+    color: #171D20;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 900;
+}
+
+.about-the-club #about-underline{
+    width: 15%;
+    height: 10px;
+    margin-left: 42.5%;
+    margin-top: 10px;
+    background-color: #171D20;
+    border-radius: 30px;
+}
+
+.about-the-club #about-text{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+    text-align: center;
+    /* border: #171D20 2px solid; */
+}
+
+.about-the-club #about-text p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+#about-extension{
+    height: 25vh;
+    background-color: #906de9;
+}
+
+/*-----x-----About the club ----x------*/
+
+
+
+
+
+/*---------Activities---------------*/
+
+.activities{
+    background-color:#171D20;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.activities h1{
+    color: #906de9;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 900;
+}
+
+.activities #activities-underline{
+    width: 6%;
+    height: 10px;
+    margin-left: 47%;
+    margin-top: 10px;
+    background-color: #906de9;
+    border-radius: 30px;
+}
+
+
+
+.activities-slider{
+    /* display: flex; */
+    margin-top: 50px;
+    position: relative;
+    background: #171D20;
+    margin-left: 15%;
+    width: 70%;
+
+}
+
+.img-slider .slide{
+    position: absolute;
+    background: #000000;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    /* transition: clip-path 0s; */
+    clip-path: circle(0% at 0% 0);
+}
+
+.img-slider .slide.active{
+    background: linear-gradient(320deg , #b69bfa, #906de9 );
+    /* box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #202429, 0 0 40px #202429, 0 0 50px #202429,0 0 60px #202429, 0 0 70px #202429; */
+    /* -webkit-box-reflect: below 0.01px linear-gradient(transparent, transparent , #0006); */
+    transition-timing-function: ease-in-out;
+    clip-path: circle(200% at 0 0);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.slide:hover,
+.slide.active:hover{
+    /* background: #202429; */
+    background: linear-gradient(320deg , #171D20, #202429 );
+    /* box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #906de9, 0 0 40px #906de9, 0 0 50px #906de9 ,0 0 60px #906de9, 0 0 70px #906de9; */
+    transition-timing-function: ease-in-out;
+    transition-duration: 10s;
+}
+
+.activities img{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 70%;
+    opacity: 0.5;
+}
+
+.slide:hover img{
+    opacity: 1;
+}
+
+.activities .info{
+    position: relative;
+    padding-left: 50px;
+    padding-top: 42px;
+}
+
+.info h2{
+    color: #FFFFFF;
+}
+
+.info .activity-underline{
+    position: relative;
+    width: 1%;
+    height: 5px;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+.slide:hover .activity-underline{
+    width: 20%;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.info p{
+    color: #171D20;
+    width: 40%;
+    padding-top: 50px;
+    font-weight: 500;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.slide:hover p{
+    color: #906de9;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.navigation{
+    display: flex;
+    margin-top: 500px;
+    justify-content: center;
+}
+
+.navigation .btn{
+    z-index: 2;
+    background: #b69bfa;
+    /* margin-top: 300px; */
+    width: 20px;
+    height: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navigation .btn.active{
+    background-color: #906de9;
+}
+
+
+
+@media only screen and (max-width: 1185px){
+    .activities img{
+        margin-left: 60%;
+    }
+}
+@media only screen and (max-width: 960px){
+    .activities img{
+        margin-left: 50%;
+    }
+}
+
+/* @media only screen and (max-width: 740px){
+    .activities img{
+        margin-left: 40%;
+    }
+} */
+@media only screen and (max-width: 750px){
+    .slide{
+        height: 100px;
+    }
+    .activities img{
+        height: 100px;
+        width: 100px;
+        margin-left: 41%;
+        margin-top: 10px;
+        display: none;
+    }
+    .activities .info{
+        position: relative;
+        padding-left: 20%;
+        padding-top: 10px;
+    }
+    .info p{
+        width: 80%;
+        padding-top: 20px;
+
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        margin-left: 15px;
+        justify-content: center;
+    }
+    .navigation .btn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 1px;
+    }
+
+
+}
+
+@media (max-width:378px){
+#auto-type .auto-type-buttons #circle-green{
+    display: none;
+}
+}
+@media(max-width:320px){
+#auto-type .auto-type-buttons #circle-yellow{
+    display: none;
+}
+}
+
+
+@media(max-width:768px) and (min-width:424px){
+    .auto-type-text1 #lt{
+        padding-left: 12px;
+    }
+}
+
+@media(max-width:426px){
+    .auto-type-text1 #lt{
+        padding-left: 7px;
+    }
+}
+
+
